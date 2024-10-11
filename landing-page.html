@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Landing Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		
+		<!--Page Content-->
+		<div class="header">
+			<img src="/assets/logo-blue.png" alt="EBQ Logo">
+			<button id="contactButton"><strong>CONTACT US</strong></button>
+		</div>
+
+		<!--Intoductory Paragraph-->
+		<div class="hero">
+			<div class="heroContent">
+				<h1>Integrated<br><strong>Marketing Services</strong></h1>
+				<p>
+					We turn your marketing plans into action by building on your ideas and executing 
+					initiatives alongside you and your team. Get a complete department that can pivot to 
+					different areas of marketing based on your needs.
+				</p>
+			</div>	
+		</div>
+
+		<!--Second Paragraph-->
+		<div class="about">
+			<div class="aboutFlexOne">
+				<div>
+					<h2>We're experts with <strong>modern marketing tools</strong>, so you don't have to be!</h2>
+					<p>
+						With hands-on experience in B2B's most innovative apps and tools, we take a 
+						data-driven approach to continually improve prospect engagement. Whether we 
+						work directly out of your platform or provide our insights manually, you always 
+						get full visibility into the process.
+					</p>
+				</div>
+				<img src="/assets/Marketing_Tools.svg" alt="Diagram of EBQ marketing tools">
+			</div>
+
+			<!--Third Paragraph-->
+			<div class="aboutFlexTwo">
+				<img src="/assets/Complete-Department-Marketing.png" alt="3 people from the marketing department">
+				<div>
+					<h2><strong>The best way</strong> to build a marketing team</h2>
+					<p>
+						With EBQ, you're not just hiring a marketing specialist. 
+						You're getting an entire marketing department at a fraction of the 
+						cost and effort of hiring internally.
+					</p>
+					<p>
+						For each project, we provide: a Success Manager to drive high-level strategy, 
+						a Project Manager to oversee day-to-day operations, and one or more Specialists 
+						working diligently to amplify your brand.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--Footer-->
+		<div class="footer">
+			<h2>Looking to take your <strong>marketing to the next level?</strong></h2>
+			<button id="footerContactButton"><strong>CONTACT US</strong></button>
+		</div>
+
+		<!--Modal Window-->
+		<div class="modal" id="myModal">
+			<div class="modal-content">
+				<span class="close" id="close-button">&times;</span>
+				<h1><strong>Ready to start growing?</strong></h1>
+				<p>Contact one of our <strong>Business Consultants</strong> to see how we can <strong>help you scale.</strong></p>
+				<form>
+					<div class="row">
+						<input type="text" name="firstName" placeholder="First Name">
+						<input type="text" name="lastName" placeholder="Last Name">
+					</div>
+					<div class="row">
+						<input type="email" name="email" placeholder="Email">
+						<input type="tel" name="phone" placeholder="Phone Number">
+					</div>
+					<div class="row">
+						<textarea name="message" placeholder="Message"></textarea>
+					</div>
+					<div class="row">
+						<button type="submit"><strong>Let's Talk</strong></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script>
+
+			// Get the modal window, close button, and contact buttons
+			var modal = document.getElementById("myModal");
+			var closeButton = document.getElementById("close-button");
+			var contactButton = document.getElementById("contactButton");
+			var footerContactButton = document.getElementById("footerContactButton");
+	
+			// Show the modal window when one of the contact buttons is clicked
+			contactButton.onclick = function() {
+				modal.style.display = "block";
+			};
+	
+			footerContactButton.onclick = function() {
+				modal.style.display = "block";
+			};
+	
+			// Close the modal window when the close button is clicked
+			closeButton.onclick = function() {
+				modal.style.display = "none";
+			};
+		</script>
+	</body>
+</html>
